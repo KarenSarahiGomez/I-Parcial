@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace IParcial
 {
-    public partial class Ejercicio8 : Form
+    public partial class Ejercicio8 : Form 
     {
         public Ejercicio8()
         {

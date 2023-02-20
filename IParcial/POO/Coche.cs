@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace POO
+﻿namespace POO
 {
-    internal class Coche //Internal es modificar de accceso que esta solo dentro de namespa..
+    public class Coche //Internal es modificar de accceso que esta solo dentro de namespa..
     {
         //Atributos: caracteristicas de la clase y siempre van a ser privados
         private string marca;

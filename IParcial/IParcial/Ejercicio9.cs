@@ -1,15 +1,7 @@
-﻿using System;
+﻿using POO;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Diagnostics;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using POO;
-
 
 namespace IParcial
 {
@@ -20,7 +12,7 @@ namespace IParcial
             InitializeComponent();
         }
         Coche miCoche = null;
-        List<Coche> ListaCoches = new List<Coche>);
+        List<Coche> ListaCoches = new List<Coche>();
         private void button1_Click(object sender, EventArgs e)
         {
             //Coche miCoche = new Coche(); //Constructor vacío
@@ -29,17 +21,17 @@ namespace IParcial
             string marca = MarcatextBox.Text;
             string modelo = ModelotextBox.Text;
             decimal precio;
-            if (PreciotextBox.Text = string.Empty)
+            if (PreciotextBox.Text == string.Empty)
             {
                 precio = 0;
             }
-            else 
+            else
             {
                 precio = Convert.ToDecimal(PreciotextBox.Text);
-            } 
-            int km = KilometrostextBox.Text == string.Empty ? 0: Convert.ToInt32(KilometrostextBox.Text);
+            }
+            int km = KilometrostextBox.Text == string.Empty ? 0 : Convert.ToInt32(KilometrostextBox.Text);
             // ? entonces, =: si no
-           
+
             miCoche = new Coche();  //Intanciar
 
             miCoche.Marca = marca;
@@ -54,7 +46,7 @@ namespace IParcial
             MarcatextBox.Focus(); //Limpiar y agregar a la lista 
             //MessageBox.Show("Objeto coche -> Marca: " + miCoche.Marca + "Modelo: " + miCoche.Modelo);
         }
-        private void LimpiarControles() 
+        private void LimpiarControles()
         {
             MarcatextBox.Clear(); //Formas de limpiar
             ModelotextBox.Text = string.Empty;
